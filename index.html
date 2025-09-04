@@ -1,22 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buger King</title>
+    <title>Burger King</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <center>
-        <h1>Buger King</h1>
-        <h2> Las Mejores Hamburguesas</h2>
-        <img src="imagenes/imagen1.jpeg" alt="Hamburguesa Preferida" width="700" height="600">
-        <br>
-        <h1>Combo 1x2 de Hamburguesas</h1>
-        <br><br>
-        <img src="imagenes/imagen2.jpg" alt="Combo 1x2" width="700" height="600" >
-        <h1> Imagen aleatoria</h1>
-        <img src="https://picsum.photos/600/600" alt="img aleatoria">
-    </center>
-    
+    <header>
+        <h1>Burger King</h1>
+        <h2 id="saludo"></h2>
+    </header>
+
+    <main>
+        <section class="menu">
+            <h2>Hamburguesa Preferida</h2>
+            <img src="imagenes/imagen1.jpeg" alt="Hamburguesa Preferida" class="img-comida">
+            <p class="descripcion">Una jugosa hamburguesa con queso, lechuga y tomate.</p>
+            <button onclick="toggleDescripcion(this)">Ver más</button>
+            <br><br>
+            <button onclick="like(this)">❤️ Like</button> 
+            <span class="contador">0</span>
+        </section>
+
+        <section class="menu">
+            <h2>Combo 1x2 de Hamburguesas</h2>
+            <img src="imagenes/imagen2.jpg" alt="Combo 1x2" class="img-comida">
+            <p class="descripcion">Un combo especial de 2 hamburguesas al precio de 1.</p>
+            <button onclick="toggleDescripcion(this)">Ver más</button>
+            <br><br>
+            <button onclick="like(this)">❤️ Like</button> 
+            <span class="contador">0</span>
+        </section>
+
+        <section class="menu">
+            <h2>Imagen Aleatoria</h2>
+            <img id="random-img" src="https://picsum.photos/600/600" alt="Imagen aleatoria" class="img-comida">
+            <br>
+            <button onclick="cambiarImagen()">Cambiar Imagen</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Burger King - Página de Demostración</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

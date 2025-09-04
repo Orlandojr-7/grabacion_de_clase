@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff914d, #ff3131);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: white;
+}
+
+header {
+    background-color: #b22222;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+header h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.menu {
+    margin: 40px auto;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.4);
+}
+
+.menu h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.img-comida {
+    border-radius: 20px;
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.img-comida:hover {
+    transform: scale(1.05);
+}
+
+button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ffdb4d;
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #8b0000;
+    padding: 15px;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+.descripcion {
+    display: none;
+    margin-top: 10px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+}
